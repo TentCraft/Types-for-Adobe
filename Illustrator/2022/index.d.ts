@@ -4155,7 +4155,7 @@ declare class TextFrameItems extends Array<TextFrame> {
    * @param baseFrame The base text frame if it has one.
    * @param postFix Whether to postfix/prefix the new text frame to the specified base text frame.
    */
-  static areaText(
+  areaText(
     textPath: PathItem,
     orientation?: TextOrientation,
     baseFrame?: TextFrame,
@@ -5744,47 +5744,47 @@ declare class IllustratorSaveOptions {
   /**
    * If SaveMultipleArtboards is true ,this will be considered for multi-asset extraction which specifies artboard range.Empty string will extracts all the artboards.Default is empty string.
    */
-    artboardRange: string
+  artboardRange: string
 
   /**
    * What Illustrator file format version to create.
    */
-   compatibility: Compatibility
+  compatibility: Compatibility
 
   /**
    * Should the saved file be compressed (version 10 or later)
    */
-   compressed: boolean
+  compressed: boolean
 
   /**
    * Embed the document's ICC profile in the saved file (version 9 or later)
    */
-    embedICCProfile: boolean
+  embedICCProfile: boolean
 
   /**
    * Are linked image files to be included in the saved document (versions 7 or later)
    */
-   embedLinkedFiles: boolean
+  embedLinkedFiles: boolean
 
   /**
    * How should transparency be flattened for older file format versions (pre-version 9)
    */
-   flattenOutput: OutputFlattening
+  flattenOutput: OutputFlattening
 
   /**
    * Include a subset of fonts when less than this percentage of characters are used (version 9 or later)
    */
-   fontSubsetThreshold: number
+  fontSubsetThreshold: number
 
   /**
    * Save as a PDF compatible file (version 10 or later)
    */
-   pdfCompatible: boolean
+  pdfCompatible: boolean
 
   /**
    * All the artboards or range of the artboards will be saved.
    */
-   saveMultipleArtboards: boolean
+  saveMultipleArtboards: boolean
 }
 
 /**
